@@ -3594,4 +3594,69 @@ details-disclosure > details {
   100% {
     transform: translateX(100%) scaleX(0);
   }
+
+  /* CLASSICAL WEARABLE - CUSTOM OVERRIDES */
+
+/* TYPOGRAPHY & COLORS */
+:root {
+  --font-heading-family: "Garamond", "Times New Roman", serif;
+  --font-body-family: "Helvetica Neue", Helvetica, sans-serif;
+  --color-base-background-2: #F4F1EA; /* The Beige Card Color */
+}
+
+h1, h2, h3, .h1, .h2, .h3 {
+  font-family: var(--font-heading-family) !important;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+/* PRODUCT CARDS (Rounded + Beige) */
+.card-wrapper {
+  background-color: #F4F1EA !important;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card-wrapper:hover {
+  transform: translateY(-5px);
+}
+
+.card__content {
+  padding: 1.5rem !important;
+}
+
+/* BUTTONS (Pill Shape) */
+.button, .shopify-payment-button__button--unbranded {
+  border-radius: 50px !important;
+  font-weight: 600;
+  text-transform: none !important;
+  letter-spacing: 0px;
+}
+
+/* GRADIENT SECTIONS */
+/* Targets the "Timeless Style" strip */
+#shopify-section-gradient_strip .rich-text {
+  background: linear-gradient(90deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+}
+#shopify-section-gradient_strip h2 {
+  color: white !important;
+}
+
+/* Targets the "Wearable Tech" text */
+#shopify-section-tech_feature h2 {
+  background: linear-gradient(90deg, #A78BFA 0%, #F472B6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #111827 !important;
+  color: white;
+}
+.footer h2, .footer a {
+  color: white !important;
+}
 }
